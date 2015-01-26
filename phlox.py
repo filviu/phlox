@@ -32,9 +32,9 @@ def disBlank():
 def disPrint( intNum ):
 	"Prints a number 0-9999 on the four tubes"
 	cTube = 4
-# print the digits in revers turning off remaining tubes incidentally 
-# this won't print 0:00 - 0:59 correctly but that's ok since I have it
-# off at 23:59 :)
+# prints the digits in reverse turning off remaining tubes 
+# incidentally this won't print 0:00 - 0:59 correctly but that's ok 
+# for now since I have it off at 23:59 :)
 	for digit in [int(i) for i in str(intNum)[::-1]]:
 		tubePrint( cTube, digit )
 		cTube -= 1
